@@ -1,0 +1,47 @@
+﻿@using PerpetuumSoft.Knockout
+@model PortfolioSite.Models.ProjectsModel
+@{
+    var ko = Html.CreateKnockoutContext();
+}
+<script>
+    var viewModel = {
+        sect_Curr: 'default',
+        SetSection: function (sect) {
+            console.log('hit');
+            sec_Curr = sect;
+        }
+    }
+    ko.applyBindings(new viewModel);
+</script>
+<div class="projects">
+    <div class="container">
+        <section>
+            <!-- large view -->
+            <div class="panel" data-bind="visible: sect_Curr == 'default'" >
+                <h1 class="text-center">Recent Projects</h1>
+                <p>Patrick did not have the confidence to get back into the software engineering world because he did not have any relatable experience to show. So, he attended SeedPaths to get a little push and some more experience programming to get back into the software engineering industry.  He still had the basic programming skills, but lack the current knowledge for the technologies. The following projects were done at the SeedPaths program and done in Visual Studio 2013.</p>
+            </div>
+            <div class="panel hidden" data-bind="visible: sect_Curr == 'Favorites'">
+                <h1 class="text-center">Favorit.es</h1>
+                <p>This was done in-class at SeedPaths and Patrick did some modifications.  With the use of the 'Flickr' API, user input of tags to display photos from their database. The lesson was about the use of an Application Programe Interfce (API). The user can select a photo to be placed into their favorites, can view the favorites, and be able to remove them. The modification that Patrick added was that if the user is viewing their favorites and remove all their favorites.  The website redirects the user back to the home page. Additional features will be added later by trial and error by reengineered.</p>
+            </div>
+            <!-- thumbnail view -->
+            <h2 class="page-header">list of projects</h2>
+            <div class="main">
+                @*<div class="view view-first" ng-mouseover="setSection('favorites')" ng-mouseleave="setSection('default')">*@  <!-- Angular code -->
+                <div class="view view-first" data-bind="event: { mouseover: SetSection('Favorites'), mouseout: SetSection('Default')}">
+                    <img src="~/Content/img/screenshots/Favorites-thumb.png" />
+                    <div class="mask">
+                        <h2>Favorit.es</h2>
+                        <p>An in-class assignment at SeedPaths with Patrick's modifications. Uses the 'Flickr' API to display photos from their database based on input a couple of tags.</p>
+                        <a href="https://github.com/PatrickSHYee/Favorit.es-FirstDraft" class="info" target="_blank">
+                            <i class="fa fa-github fa-2x"></i>
+                            Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+

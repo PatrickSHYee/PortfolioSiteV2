@@ -1,0 +1,454 @@
+﻿/*
+    Author: Patrick Yee
+    Description: Taking parts from other sites and build my own.
+        A small description of each portion displaying what's
+        going on.
+*/
+
+/* main tags */
+html, body {
+    background: #ffffff; /* white background*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+}
+
+body a:hover{
+    /* a slow transition when link is hover overed */
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;  /* Opera browswer */
+    -moz-transition: 0.5s all;  /* Firefox browser */
+    -ms-transition: 0.5s all; /* IE browser */
+    text-decoration: none;  /* No decoration. Farther down animation is added to the links */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+h3.page-header {
+    color: #000000;
+    font-weight: 700;
+    margin: 0.5em 0 1em;
+    text-transform: uppercase;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+/*--Header--*/
+.header{
+    background: #4b4437;  /* chocolate color */
+    padding: 2em 0;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+.navigate {
+    width: 70%;
+    float: right;  /* pushes the element to the right */
+}
+
+.navigate li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navigate ul a {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 10px;
+    outline: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);  /* mild grey shadow to the link */
+    font-size: 1.35em;
+}
+
+.navigate li a {
+    text-transform: uppercase;  /* Uppercase the links in the navbar */
+    font-size: 1em;
+    color: #ffffff;  /* White text */
+    font-weight: 700; /* Somewhat bold */
+}
+
+.navigate ul a:hover, .navigate ul a:focus {
+    outline: none;
+}
+
+.cl-effect-3 a {
+    padding: 8px 0;
+}
+
+/* set up the link */
+.cl-effect-3 a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #ff7105;  /* orange color */
+    content: ' ';
+    opacity: 0;  /* it is not visible */
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+/* this makes the animation visible */
+.cl-effect-3 a:hover::after, .cl-effect-3 a:focus::after {
+    opacity: 1;
+    -webit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+/*--Projects--*/
+.projects {
+    padding: 1em 2em 2em;
+}
+
+.main {
+    width: 85%;
+    float: left;
+}
+
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #ffffff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+    -moz-box-shadow: 1px 1px 2px #e6e6e6;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+
+.view .mask, .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.view img {
+    display: block;
+    position: relative;
+}
+
+.view h2{
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+}
+
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #ffffff;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 1px #000000;
+    -moz-box-shadow: 0 0 1px #000000;
+    box-shadow: 0 0 1px #000000;
+}
+
+.view a.info:hover {
+    -webkit-box-shadow: 0 0 5px #000000;
+    -moz-box-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 5px #000000;
+}
+
+.view-first img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.view-first .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background-color: rgba(219, 127, 8, 0.7);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.view-first h2{
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first p {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Zooms into the image */
+.view-first:hover img {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.view-first a.info {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Shows the mask, but not the data */
+.view-first:hover mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+/* Shows the invisible mask */
+.view-first:hover h2, .view-first:hover p, .view-first:hover a.info {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.view-first:hover p {
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.view-first:hover a.info {
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+/* media objects */
+@media (max-width: 1024px){
+    .logo a img{
+        width: 65%;
+    }
+
+    .header {
+        padding: 2em 0 1em;
+    }
+
+    .navigate {
+        width: 76%;
+    }
+
+    .navigate li a {
+        font-size: 0.875em;
+    }
+
+    .navigate ul {
+        margin-top: 0px;
+    }
+
+    .view, .view .mask, .view .content {
+        width: 235px;
+        height: 165px;
+    }
+
+    .view-first img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .header {
+        padding: 1em 0 1em;
+    }
+
+    /* navbar links disappear and the menu button appears*/
+    span.menu{
+        width: 32px;
+        height: 32px;
+        background: url(img/nav.png) no-repeat;
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+    }
+
+    /* display for the smaller windows */
+    .navigate {
+        width: 100%;
+        display: none;
+        text-align: center;
+        background: #ffffff;
+        padding: 0.5em 0;
+        margin-top: 10px;
+    }
+    
+    .navigate ul {
+        float: none;
+        width: 100%;
+    }
+
+    .navigate li {
+        display: block;
+    }
+
+    .navigate li a {
+        color: #000000;
+        display: block;
+    }
+
+    .projects{
+        padding: 2.5em 0 2em;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .view {
+        width: 45%;
+        height: 209px;
+    }
+
+    .view .mask, .view .content{
+        width: 100%;
+        height: 209px;
+    }
+
+    .view.view-first:nth-of-type(9){
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    .logo a img {
+        width: 37%;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .header {
+        padding: 0.5em 0;
+    }
+
+    h3.page-header {
+        font-size: 1.2em;
+        margin: 0.5em 0 0em;
+    }
+
+    .projects {
+        padding: 1em 0 2em;
+    }
+
+    .view, .view.mask, .view.content {
+        height: 141px;
+    }
+
+    .view-first:hover p {
+        display: none;
+    }
+
+    .mask h2{
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 320px){
+    .logo {
+        left: 6%;
+    }
+
+    .logo a img{
+        width: 44%;
+    }
+
+    .view {
+        margin: 5px;
+        border: 0px;
+    }
+
+    .view, .view.mask, .view.content {
+        height: 88px;
+    }
+
+    .view h2 {
+        font-size: 12px;
+        padding: 7px;
+        margin: 8px 0 7px 0;
+    }
+}

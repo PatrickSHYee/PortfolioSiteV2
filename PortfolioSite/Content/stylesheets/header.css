@@ -1,0 +1,140 @@
+﻿/*
+    Author: Patrick S. Yee
+    Description:  Header styles from the W3Layouts from the Gamez template.  Modified to this portfolio.
+        Notes with changes and what it does.
+    Changes:  
+        -  navbar or the header background color was from black to chocolate.
+        -  the drop shadow was changed from 0.3 to 1 when a link in the navbar is hovered.
+*/
+
+/* Header or the navbar division */
+.header{
+	background:#4b4437;  /* orig: black. rev: chocolate */
+	padding:2em 0;
+	position:relative;
+}
+.logo{
+	position:absolute;
+	top:0;
+	left:10%;
+}
+
+/* The navbar takes up 70% of the window and floats to the right */
+.navigate{
+	width:70%;
+	float:right;
+}
+.navigate ul{
+	padding:0;
+	width: 65%;
+	float: left;
+	margin-top: 10px;
+}
+.navigate ul li{
+	display: inline-block;
+	margin:0 10px;
+}
+.navigate ul li a{
+	text-transform:uppercase;
+	font-size:1em;
+	color:#fff;
+	font-weight:700;
+}
+
+/* OnHover the text color is orange */
+.navigate ul li a:hover{
+	color:#ff7105;
+}
+/*.banner{
+	background:url(../images/banner.jpg)no-repeat;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	min-height:650px;
+}
+@media(max-width:1440px){
+	.banner{
+		min-height:600px;	
+	}
+}
+.banner-bot{
+	padding:4em 0;
+	text-align:center;
+}
+.banner-bot h2{
+	font-size:4em;
+	font-weight:700;
+	color:#000;
+	margin:0em 0 0.5em 0;
+}
+.banner-bot p{
+	font-size:1.1em;
+	font-weight:500;
+	color:#000;
+	line-height:1.8em;
+	margin:0 0 0.5em;
+}
+.banner-bot p:nth-of-type(2){
+	font-weight:100;
+	font-size:0.875em;
+	margin-bottom:2em;
+}
+.banner-bot a{
+	font-size:2em;
+	text-transform:uppercase;
+	font-weight:700;
+	color:#000;
+}*/
+
+/* links in the navbar are white and bold. */
+/*nav a,*/.navigate ul a{
+	position: relative;
+	display: inline-block;
+	margin: 0px 0px 10px;
+	outline: none;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,1); /* the drop shadow was changed from 0.3 to 1. */
+	font-size: 1.35em;
+}
+
+/* no outline */
+/*nav a:hover,
+nav a:focus,*/ .navigate ul a:hover, .navigate ul a:focus {
+	outline: none;
+}
+.cl-effect-3 a {
+	padding: 8px 0;
+}
+
+/* Sets up a bar for the links. */
+.cl-effect-3 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #ff7105;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+/* Animates a bar under links when hover. */
+.cl-effect-3 a:hover::after,
+.cl-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}

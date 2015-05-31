@@ -1,0 +1,130 @@
+﻿/*
+    Author: Patrick S. Yee
+    Description:  Modfication for the Gamez template from W3Layouts.  This stylesheet is break up for the main tags and single pages.  Notes
+        follow what it does.
+    Scheme:
+        navbar or header color: 4b4437 (chocolate)
+        a color = ffffff (white)
+        a:hover color = ff7105 (orange)
+*/
+
+h4, h5, h6,h1, h2, h3 {
+    margin-top: 0;
+}
+ul, ol {
+    margin: 0;
+    padding:0;
+}
+p {
+    margin: 0;
+}
+body a:hover{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	text-decoration:none;
+}
+html, body{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:100%;
+	background:#fff;
+}
+/* Centralizes the container class. */
+.container:after { 
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+/* Added to this stylesheet b/c it's used everywhere */
+h2.page-header{
+	font-size:1.2em;
+	color:#ff7105;
+	font-weight:500;
+	margin:0.5em 2em 1em; /* margin left: 0 to 2em*/
+	text-transform:uppercase;
+}
+
+/* A tag is same in Header(check css) */
+a:hover {
+    color:#ff7105;
+}
+
+a{
+	position: relative;
+	display: inline-block;
+	margin: 0px 0px 10px;
+	outline: none;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,1); /* the drop shadow was changed from 0.3 to 1. */
+	font-size: 1.35em;
+}
+
+/* Social icons */
+.social, .social a {
+    color: #4b4437;
+}
+
+.social a:hover .fa-google-plus-square{
+    color: red;
+}
+
+.social a:hover .fa-github-square{
+    color: #a29baa;
+}
+
+.social a .fa-github{
+    color: #aaaaaa;
+}
+
+.social a:hover .fa-github{
+    color: #333333;
+}
+
+.social a:hover .fa-facebook-square{
+    color: #3b5998;
+}
+
+.social a:hover .fa-steam-square{
+    color: #000000;
+}
+
+.social a:hover .fa-soundcloud{
+    color: #ff8800;
+}
+
+.social a .fa-youtube {
+    color: red;
+}
+
+/*-- Single Page Starts Here --*/
+/*.comment-box{
+	margin:2em 0;
+}
+.text-cmt{
+	margin:1em 0;
+}
+.text-cmt input[type="text"]{
+	width:47%;
+	margin-right:2%;
+	padding:10px;
+	border:1px solid #ff7105;
+	outline:none;
+	-webkit-appearance:none;
+}
+.text-cmt textarea{
+	width:96.4%;
+	height:150px;
+	border:1px solid #ff7105;
+	outline:none;
+	-webkit-appearance:none;
+	padding:10px;
+	resize:none;
+}*/

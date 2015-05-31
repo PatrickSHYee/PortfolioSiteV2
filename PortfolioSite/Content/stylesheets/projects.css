@@ -1,0 +1,256 @@
+﻿/*
+    Author:  Patrick S. Yee
+    Description:  Modifications for the Gamez template from the W3Layouts.
+    Changes:
+        -  padding for the top was 4em to 1em.
+        -  took out the bgimg.jpg it wasn't in the template.
+        -  the mask content transitions are slower and different from the template. (see below about the changes)
+*/
+
+.projects{
+	padding: 1em 0 2em;
+}
+/*.page-path{
+	margin:0.5em 0 1em;
+}
+.page-path p{
+	font-size:1em;
+	font-weight:300;
+	color:#000;
+	float:right;
+}
+ul.path-list{
+	padding:0;
+	float:left;
+}
+ul.path-list li{
+	display: inline-block;
+	font-size:1em;
+	font-weight:300;
+	color:#000;
+}
+ul.path-list li a:hover, .page-path p a:hover{
+	color:#4fbfa8;
+}
+ul.path-list li.act{
+	color:#ff7105;
+}*/
+
+.main{
+	width:85%;
+	float:left;
+}
+/*.side-bar{
+	width:15%;
+	float:left;
+	padding:10px 0;
+	background: aliceblue;
+}
+.side-bar h4{
+	font-size:1.1em;
+	text-transform:uppercase;
+	font-weight: 500;
+	text-align:center;
+	margin: 0 0 1em;
+}
+ul.game-list{
+	padding:0;
+	margin:0.5em 0; 
+}
+ul.game-list li{
+	display:block;
+	
+}
+ul.game-list li a{
+	font-size:0.875em;
+	color:#3c3a3e;
+	font-weight:100;
+	padding:0.2em 1em 0.5em;
+	border-bottom:1px solid #3c3a3e;
+	display:block;
+	text-transform:uppercase;
+}
+ul.game-list li a:hover{
+	color:#ff7105;
+}*/
+/* hiddens the content, but the image. */
+.view {
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+   float: left;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+   -moz-box-shadow: 1px 1px 2px #e6e6e6;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+   /*background: #fff url(../images/bgimg.jpg) no-repeat center center;*/
+}
+
+/* Shows the content, but within the image. */
+/*.view .content,*/ .view .mask {
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+/* The title of the project has a black background with a 20% transparent and it is uppercased and white. */
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 10px 0 0 0;
+}
+/* a caption for the project is italic, a font change, centered, and text is white. */
+.view p {
+   font-family: Georgia, serif;
+   /*font-style: italic;*/
+   font-size: 12px;
+   position: relative;
+   color: #fff;
+   padding: 2px 20px 20px;  /* padding top 10px to 2px */
+   text-align: center;
+}
+/* The link has a black background and the text is white and uppercased. */
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 2px 14px;  /* padding top 7px to 2px */
+   background: #000000;
+   color: #ffffff;
+   text-transform: uppercase;
+   -webkit-box-shadow: 0 0 1px #000;
+   -moz-box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;
+}
+.view a.info:hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+}
+.view-first img {
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+/* The content is hidden, but the link is there. */
+.view-first .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background-color: rgba(219,127,8, 0.7);
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    /* comes from the bottom not the top */
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   /* transition 0.1s to 0.5s*/
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+/* The link is there, but not the whole thing. */
+.view-first p {
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+/* zooms in the image */
+.view-first:hover img {
+   -webkit-transform: scale(1.1,1.1);
+   -moz-transform: scale(1.1,1.1);
+   -o-transform: scale(1.1,1.1);
+   -ms-transform: scale(1.1,1.1);
+   transform: scale(1.1,1.1);
+}
+.view-first a.info {
+    /* add transform b/c the link does not just appears */
+    -webkit-transform: translateY(-150px);
+   -moz-transform: translateY(-150px);
+   -o-transform: translateY(-150px);
+   -ms-transform: translateY(-150px);
+   transform: translateY(-150px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   /* transition 0.2s to 0.4s*/
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+/* the mask background appears */
+.view-first:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+/* the masked content appears, but the content does not fit the image */
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+}
+/* the mask caption fits the area. Transition from 0.1s to 0.3s */
+.view-first:hover p {
+   -webkit-transition-delay: 0.1s;
+   -moz-transition-delay: 0.1s;
+   -o-transition-delay: 0.1s;
+   -ms-transition-delay: 0.1s;
+   transition-delay: 0.1s;
+}
+/* the transition of the link is a slower */
+.view-first:hover a.info {
+    /* transition 0.2s to 1s*/
+   -webkit-transition-delay: 1s;
+   -moz-transition-delay: 1s;
+   -o-transition-delay: 1s;
+   -ms-transition-delay: 1s;
+   transition-delay: 1s;
+}

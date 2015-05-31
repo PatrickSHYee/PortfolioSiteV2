@@ -1,0 +1,157 @@
+﻿/*
+    Author:  Patrick S. Yee
+    Description:  Modifications are done to the Gamez template from the W3Layouts.
+*/
+
+/*.blog-content{
+	width:72%;
+	float:left;
+	margin-right:2%;
+}
+.blog-sidebar{
+	width:25%;
+	padding:0 2em;
+	float:left;
+}
+.blog-post{
+	margin:0.5em 0 2em;
+}
+.blog-post h3, .blog-post h3 a{
+	font-size:1.2em;
+	text-transform:uppercase;
+	color:#3c3a3e;
+	font-weight:700;
+	margin:0;
+}
+.post-details{
+	margin:0.5em 0;
+}
+.post-details p{
+	font-size:1em;
+	color:#3c3a3e
+	font-weight:100;
+}
+.post-details p a{
+	font-weight:500;
+	color:#4fbfa8
+}
+.post-details p span{
+	color:#4fbfa8
+}
+.blog-post img{
+	width:100%;
+	margin:0.5em 0;
+}
+.blog-post h4{
+	font-size: 1em;
+	color:#3c3a3e;
+	font-weight:500;
+	text-transform:uppercase;
+	margin:0.5em 0;
+	line-height:1.6em;
+}
+.blog-post p{
+	font-size:0.875em;
+	color:#3c3a3e;
+	font-weight:100;
+	line-height:1.6em;
+	margin:0.5em 0;
+}
+.blog-post nav a{
+	font-size:1em;
+	color:#000;
+	font-weight:500;
+	padding-bottom:0;
+}
+ul.product-categories{
+	margin:0 0 2em;
+	padding: 0;
+	list-style-type: none;
+}
+ul.product-categories li {
+	padding: 5px 0;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+ul.product-categories li a:hover{
+	text-decoration:none;
+	color:#E23535;
+}
+.product-categories li span.count {
+	float: right;
+	margin-left: 6px;
+	color: #aaa;
+	font-size:0.8125em;
+}
+ul.product-categories li  a {
+	-webkit-transition: background 350ms ease-in-out,border-color 350ms ease-in-out,color 150ms ease-in-out;
+	-moz-transition: background 350ms ease-in-out,border-color 350ms ease-in-out,color 150ms ease-in-out;
+	-ms-transition: background 350ms ease-in-out,border-color 350ms ease-in-out,color 150ms ease-in-out;
+	-o-transition: background 350ms ease-in-out,border-color 350ms ease-in-out,color 150ms ease-in-out;
+	transition: background 350ms ease-in-out,border-color 350ms ease-in-out,color 150ms ease-in-out;
+	font-size: 12px;
+	color: #999;
+}
+
+.blog-sidebar h3{
+	padding:0;
+}
+.subscribe{
+	margin:1em 0;
+}
+.subscribe h4{
+	font-size:1em;
+	color:#3c3a3e;
+	font-weight:500;
+	text-transform:uppercase;
+	margin:0 0 0.5em;
+}
+.subscribe input[type="text"]{
+	width:100%;
+	border:1px solid #3c3a3e;
+	padding:10px;
+	margin:1em 0;
+	outline:none;
+	-webkit-appearance: none;
+}
+.subscribe input[type="submit"]{
+	background:#ff7105;
+	padding:10px 15px;
+	color:#fff;
+	text-transform:uppercase;
+	outline:none;
+	-webkit-appearance: none;
+	border:0;
+	font-size:0.8em;
+}
+.subscribe input[type="submit"]:hover{
+	background:#4fbfa8;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	
+}
+ul.tags_links{
+	padding:0;
+	list-style:none;
+	width:100%;
+}
+ul.tags_links li {
+	display: inline-block;
+	margin: 8px 3px;
+}
+ul.tags_links li a {
+	color:#fff;
+	font-size:0.8125em;
+	background: #1a1918;
+	padding: 5px 10px;
+}
+ul.tags_links li a:hover{
+	text-decoration:none;
+}
+ul.tags_links li a:hover{
+	background:#c5996c;
+	color:#fff;
+}*/

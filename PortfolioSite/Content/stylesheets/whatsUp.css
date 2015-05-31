@@ -1,0 +1,67 @@
+﻿/*
+    Author:  Patrick S. Yee
+    Description:  Modifications for the W3Layouts for the Gamez template of the what-new class.
+*/
+
+/*.what-new{
+	padding:2em 0 4em;
+	text-align:center;
+}
+.what-new h3{
+	font-size:4em;
+	font-weight:700;
+	color:#000;
+	margin:0.5em 0;
+}
+.blog-news{
+	border-bottom:1px solid rgba(60, 58, 62, 0.19);
+	padding:0;
+}
+.blog-news-grid{
+	padding:2em;
+	border-right:1px solid rgba(60, 58, 62, 0.19);
+	width:50%;
+	float:left;
+	text-align:left;
+}
+.news-grid-left{
+	width:40%;
+	margin-right:2%;
+	float:left;
+}
+.news-grid-right{
+	width:57%;
+	float:left;
+}
+.news-grid-left h4{
+	font-weight:500;
+	color:#3c3a3e;
+	font-size:10em;
+	margin:-24px 0 -18px;
+}
+.news-grid-left small{
+	font-size:1em;
+	color:#3c3a3e;
+	font-weight: 100;
+	font-style: italic;
+	padding-left:20px;
+}	
+.news-grid-right h4{
+	font-size:1.3em;
+	font-weight:500;
+	color:#3c3a3e;
+	margin:0 0 0.5em 0;
+}
+.news-grid-right p{
+	font-size:1em;
+	font-weight:100;
+	color:#3c3a3e;
+	line-height:1.6em;
+}
+.b_n_g{
+	margin-right:0;
+	border-right:0;
+}
+.b_n{
+	border-bottom:0;
+}*/
